@@ -17,9 +17,13 @@ $(document).ready(function(){
     })();
 
     function outputElements(doctorsList) {
-      $('#firstName').text(doctorsList.data[0].profile.first_name + " " + doctorsList.data[0].profile.last_name);
-      // $('#lastName').text(doctorsList.data[0].profile.last_name);
+      $('#fullName').text(doctorsList.data[0].profile.first_name + " " + doctorsList.data[0].profile.last_name);
+      $('#addrress').text(doctorsList.data[0].profile.last_name);
+      $('#phoneNumber').text(doctorsList.data[0].practices[0].phones[0].number);
+      $('#website').text(doctorsList.data[0].profile.last_name);
+      $('#newPatients').text(doctorsList.data[0].profile.last_name);
+
     }
 
-  })
-})
+  });
+});
