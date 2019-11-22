@@ -17,7 +17,8 @@ $(document).ready(function(){
     })();
 
     function outputElements(doctorsList) {
-      $('#firstName').text(doctorsList.data[0].profile.first_name);
+      $('#firstName').text(doctorsList.data[0].profile.first_name + " " + doctorsList.data[0].profile.last_name);
+      // $('#lastName').text(doctorsList.data[0].profile.last_name);
     }
 
   })
