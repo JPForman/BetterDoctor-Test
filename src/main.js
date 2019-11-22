@@ -24,7 +24,7 @@ $(document).ready(function(){
       $('#city').html(doctorsList.data[0].practices[0].visit_address.city);
       $('#state').html(doctorsList.data[0].practices[0].visit_address.state);
       $('#phoneNumber').text(doctorsList.data[0].practices[0].phones[0].number);
-      $('#website').text(doctorsList.data[0].profile.last_name);
+      $('#website').text(doctorsList.data[0].practices[0].website);
       $('#newPatients').text(doctorsList.data[0].profile.last_name);
 
     }
