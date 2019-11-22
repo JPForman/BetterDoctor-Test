@@ -1,6 +1,7 @@
 
 export class OutputElement {
 
+
   outputElement(doctorsList) {
     for (let i=0; i<10; i++) {
       $('#fullName').append(doctorsList.data[i].practices[0].name);
