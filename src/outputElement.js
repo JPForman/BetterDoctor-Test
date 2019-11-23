@@ -2,7 +2,6 @@ import $ from 'jquery';
 import { DoctorService } from './Doctor-Service.js';
 
 
-
 export function cardElement(doctorsList) {
   for (let i=0; i<10; i++) {
   $('#docOutput').append(`<div class='card'>

@@ -6,6 +6,7 @@ export class DoctorService {
       return jsonifiedResponse;
     } catch(error) {
       //add error message to user here
+      $("#docOutput").text("Sorry, there was an error handling your request. " + error.message);
       console.error("There was an error handling your request: " + error.message);
 
 
