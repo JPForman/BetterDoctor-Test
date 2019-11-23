@@ -15,7 +15,14 @@ $(document).ready(function(){
       const doctorsList = await doctorService.getDoctors(issue);
 
       cardElement(doctorsList);
-
     })();
   });
+
+  $('#nameButton').click(function(event) {
+    event.preventDefault();
+    const inputLast = $('#inputLastName').val();
+    console.log((inputLast));
+
+  })
+
 });
