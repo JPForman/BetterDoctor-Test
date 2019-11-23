@@ -3,7 +3,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { DoctorService } from './Doctor-Service.js';
-import { outputElement } from './outputElement.js';
+import { cardElement } from './outputElement.js';
 
 $(document).ready(function(){
   $('form#issueForm').submit(function(event){
@@ -14,7 +14,8 @@ $(document).ready(function(){
       let doctorService = new DoctorService();
       const doctorsList = await doctorService.getDoctors(issue);
 
-      outputElement(doctorsList);
+      cardElement(doctorsList);
+
     })();
   });
 });
