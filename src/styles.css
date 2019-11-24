@@ -16,6 +16,22 @@
   text-align: center;
   background-color: #D6EFF0;
 }
+.issueSearch {
+  border: 3px solid #387F81;
+  border-radius: 24px;
+  padding: 1%;
+  margin-top: 2%;
+  text-align: center;
+  background-color: #F3DFB5;
+}
+.nameSearch {
+  border: 3px solid #387F81;
+  border-radius: 24px;
+  padding: 1%;
+  margin-top: 2%;
+  text-align: center;
+  background-color: #F3DFB5;
+}
 .title {
   border: 3px solid green;
   border-radius: 24px;
@@ -24,7 +40,9 @@
   text-align: center;
   background-color: #DCF0D6;
 }
-
+#or {
+  text-align: center;
+}
 #title {
   font-size: 80px;
 
