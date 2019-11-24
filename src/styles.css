@@ -8,6 +8,9 @@
   margin: 2px;
   background-color: #D3DAF4;
 }
+.doctorsOutput {
+  display: none;
+}
 .subtitle {
   border: 3px solid #387F81;
   border-radius: 24px;

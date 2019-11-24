@@ -9,6 +9,8 @@ import { cardElement } from './outputElement.js';
 $(document).ready(function(){
   $('form#issueForm').submit(function(event){
     event.preventDefault();
+    $('.doctorsOutput').show();
+    $('.docSearch').hide();
     const issue = $('#issueInput').val();
 
     (async () => {
@@ -23,7 +25,9 @@ $(document).ready(function(){
 
   $('#nameButton').click(function() {
     const inputLast = $('#inputLastName').val();
-    console.log(inputLast);
+    $('.doctorsOutput').show();
+    $('.docSearch').hide();
+
 
     (async () => {
       let doctorNameService = new DoctorNameService();

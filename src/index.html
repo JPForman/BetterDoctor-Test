@@ -13,25 +13,28 @@
       <h3 id="subtitle">Find a wonderful doctor in the Portland area! Search through the list of BetterDoctor associated physicians by physical ailment or last name of doctor.</h3>
     </div>
 
-    <form id="issueForm">
-      <div class="issueSearch">
-        <h3>Enter a keyword of an issue you are having:</h3>
-        <input id="issueInput" type="text">
-        <button type="submit" class="btn btn-info" name="issueButton">Find A Doctor!</button>
-      </div>
-      <h3 id="or">Or</h3>
-    </form>
+    <div class="docSearch">
+      <form id="issueForm">
+        <div class="issueSearch">
+          <h3>Enter a keyword of an issue you are having:</h3>
+          <input id="issueInput" type="text">
+          <button type="submit" class="btn btn-info" name="issueButton">Find A Doctor!</button>
+        </div>
+        <h3 id="or">Or</h3>
+      </form>
       <div class="nameSearch">
         <h3>Or search for a doctor by last name:</h3>
         <input id="inputLastName" type="text">
         <button id="nameButton" type="button" class="btn btn-info">Search by Last Name</button>
+      </div>
     </div>
 
-  </div>
 
-  <div class="container doctorsOutput">
-    <h3>Here are some doctors you might want to check out</h3>
-    <p id="docOutput"></p>
+    <div class="container doctorsOutput">
+      <h3>Here are some doctors you might want to check out</h3>
+      <p id="docOutput"></p>
+      <button class="btn btn-info" value="Refresh Page" onClick="history.go(0);">Search Again</button>
+    </div>
   </div>
 
 </body>
