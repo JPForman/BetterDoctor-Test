@@ -22,12 +22,10 @@ $(document).ready(function(){
 
 
   $('#nameButton').click(function() {
-    // event.preventDefault();
     const inputLast = $('#inputLastName').val();
     console.log(inputLast);
 
     (async () => {
-      console.log("hi");
       let doctorNameService = new DoctorNameService();
       const doctorsNameList = await doctorNameService.getNameDoctors(inputLast);
 

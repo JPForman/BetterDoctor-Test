@@ -1,0 +1,31 @@
+.doctorCard {
+  width: 30%;
+  border: 2px solid black;
+  float: left;
+  height: 250px;
+  border-radius: 24px;
+  padding: 1%;
+  margin: 2px;
+  background-color: #D3DAF4;
+}
+.subtitle {
+  border: 3px solid #387F81;
+  border-radius: 24px;
+  padding: 1%;
+  margin-top: 2%;
+  text-align: center;
+  background-color: #D6EFF0;
+}
+.title {
+  border: 3px solid green;
+  border-radius: 24px;
+  padding: 1%;
+  margin-top: 2%;
+  text-align: center;
+  background-color: #DCF0D6;
+}
+
+#title {
+  font-size: 80px;
+
+}
