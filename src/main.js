@@ -12,17 +12,27 @@ $(document).ready(function(){
 
     (async () => {
       let doctorService = new DoctorService();
-      const doctorsList = await doctorService.getDoctors(issue);
+      const doctorsIssueList = await doctorService.getIssueDoctors(issue);
 
-      cardElement(doctorsList);
+      cardElement(doctorsIssueList);
     })();
   });
 
-  $('#nameButton').click(function(event) {
-    event.preventDefault();
+
+
+  $('#nameButton').click(function() {
+    // event.preventDefault();
     const inputLast = $('#inputLastName').val();
-    console.log((inputLast));
+    console.log(inputLast);
 
-  })
+    (async () => {
+      console.log("hi");
+      let doctorServiceb = new DoctorService();
+      const doctorsNameList = await doctorServiceb.getNameDoctors(inputLast);
 
+      cardElement(doctorsNameList);
+    });
+  }
+
+);
 });
