@@ -16,11 +16,11 @@ export function cardElement(doctorsList) {
       <p>${doctorsList.data[i].practices[0].name}</p>
       <p>${doctorsList.data[i].practices[0].visit_address.street}, ${doctorsList.data[i].practices[0].visit_address.street2}</p>
       <p>${doctorsList.data[i].practices[0].visit_address.city}, ${doctorsList.data[i].practices[0].visit_address.state}, ${doctorsList.data[i].practices[0].visit_address.zip}</p>
-      <p>${doctorsList.data[i].practices[0].visit_address.number}</p>
+      <p>${doctorsList.data[i].practices[0].phones[0].number}</p>
       <p>${doctorsList.data[i].practices[0].website}</p>
       <p>${patients}</p>
       </div>`
     );
     }
-}
+  }
 }
