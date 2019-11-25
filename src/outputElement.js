@@ -7,7 +7,7 @@ export function cardElement(doctorsList) {
     <p>Sorry, this search returned zero results.</p>`);
   } else {
     for (let i=0; i<doctorsList.data.length; i++) {
-      if (doctorsList.data[i].practices[0].accepts_new_patients === false) {
+      if (doctorsList.data[i].practices[0].accepts_new_patients === 'false') {
         var patients = "Sorry, this physician is not currently accepting patients.";
       } else {
         patients = "This physician is currently accepting patients.";
